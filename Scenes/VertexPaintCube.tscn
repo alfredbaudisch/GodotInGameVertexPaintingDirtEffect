@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Meshes/SuvSingleScene.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/PaintVertexPaintCube.gd" type="Script" id=3]
+
+[node name="Spatial" type="Spatial"]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0, 0 )
+script = ExtResource( 3 )
+mesh_path = NodePath("Suv/suv/body")
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.855837, -0.306184, 0.416887, 0, 0.805974, 0.591951, -0.517246, -0.506613, 0.689782, 2.26737, 2.90463, 3.21901 )
+fov = 16.8
+
+[node name="Suv" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.160553, 0, -0.987027, 0, 1, 0, 0.987027, 0, -0.160553, 0, 0, 0 )
+
+[node name="suv" parent="Suv" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.295843, 0, -0.410785 )
+
+[node name="body" parent="Suv/suv" index="0"]
+material/2 = null
+
+[editable path="Suv"]

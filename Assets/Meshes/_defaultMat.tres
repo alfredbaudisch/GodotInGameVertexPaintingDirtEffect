@@ -1,0 +1,6 @@
+[gd_resource type="SpatialMaterial" format=2]
+
+[resource]
+resource_name = "_defaultMat"
+vertex_color_use_as_albedo = true
+metallic = 1.0
