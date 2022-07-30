@@ -7,7 +7,7 @@ Details and instructions:
 ![image](https://user-images.githubusercontent.com/248383/181902895-1125e6d5-9a40-4e17-9229-730b3132a0f3.png)
 
 # Alternative Solution
-My other implementation uses actual texture painting in game, being more flexible and produces smoothers results, with the cost of added complexity:
+My other implementation uses actual texture painting in game, being more flexible and produces smoother results, with the cost of added complexity - but the performance is still great:
 - [Godot Engine In-game Splat Map Texture Painting (Dirt Removal Effect)](https://github.com/alfredbaudisch/GodotRuntimeTextureSplatMapPainting)
 
 # Tips and Support
